@@ -1,0 +1,70 @@
+#root {
+  max-width: 1280px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.controls {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.maze {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* height:100vh; */
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.cell {
+  height: 40px;
+  width: 40px;
+  border: 1px solid lightgrey;
+}
+
+.cell.wall {
+  background: black;
+}
+
+.cell.path {
+  background: white;
+}
+
+.cell.start {
+  background: green;
+}
+
+.cell.end {
+  background: red;
+}
+
+.cell.visited {
+  background-color: lightblue;
+}
+
+.button {
+  background: #0091ff;
+  color: white;
+  margin: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+}
